@@ -1,0 +1,39 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #0A0A0A;
+  color:white;
+  text-align: center;
+}
+
+/* Navigaton bar */
+img{
+  max-width: 100%;
+  height: auto;
+}
+ul{
+  display: inline-block;
+  border-style: none;
+  position:relative;
+}
+li{
+  list-style-type: none;
+}
+
+.links{
+
+  float: right;
+}
+#mainLogo{
+  float: left;
+}
+
+/* HEADER */
+.navHeader{
+  position: relative;top: 200px; left: 5%;
+  margin: 0 auto;
+
+}
+
+.sev{
+  position: relative; top: 200px;
+}
