@@ -1,10 +1,21 @@
 body{
   font-family: 'Roboto', sans-serif;
-  background-color: #0A0A0A;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.7903536414565826) 0%, rgba(0,0,0,1) 96%), url('../imgs/backgroundThabo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
   color:white;
   width: 100%;
   height: 100%;
 }
+/* .bkgFilters{
+  background-image: url('../imgs/backgroundFilter.png');
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+} */
 .wrapper{
     max-width: 960px;
     height: auto;
@@ -77,11 +88,13 @@ section{
   max-width: 100%;
   display: flex;
   position: relative;
+
   margin-bottom: 50px;
 }
 
 .contact{
   position: relative;
+  margin-top: 150px;
   bottom: 30px;
 }
 
