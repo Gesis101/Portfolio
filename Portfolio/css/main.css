@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-:root {
-  --primary-color: #b90415;
-  --primary-color-hover: #d3071b;
-  --secondary-color: #103063;
-  --secondary-color-hover: #143f85;
-  --light-color: #f4f4f4;
-}
-
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -82,9 +73,9 @@ li{
 #showcase{
   margin: 0;
   padding: 0;
-  background:linear-gradient(180deg, rgba(0,0,0,0.7903536414565826) 80%, rgba(10,10,10,1) 90%), url('../imgs/backgroundThabo.png') no-repeat center/cover;
+  background:linear-gradient(180deg, rgba(0,0,0,0.7903536414565826)50%, rgba(10,10,10,1) 94%), url('../imgs/backgroundThabo.png') no-repeat center/cover;
   width: 100%;
-  height: 93vh;
+  height: 100vh;
   position: relative;
   overflow-y: hidden;
 
@@ -93,18 +84,9 @@ li{
 #showcase .container {
   margin-top: 25vh;
 }
-.section-main input{
-  margin-top: 3rem;
-  border-color: #d50000;
-  font-weight: bold;
-  color: white;
-  border-radius: 1px;
-  background-color: transparent;
-  height: 3rem;
-  width: 10rem;
-}
+
 #showcase h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0;
 
 }
@@ -112,36 +94,88 @@ li{
 #showcase h2 {
   font-size: 2rem;
 }
+#welcome2{
+    font-family: 'Open Sans', arial, sans-serif;
+    line-height: 2.6;
+    letter-spacing: 0.2rem; 
+    border-bottom: solid #d50000;
+    border-radius: 5px;
+    text-underline-position: below;
+}
+#welcome{
+     font-family: 'Open Sans', arial, sans-serif;
+  
+}
+
 img{
   width: 100%;
 }
 
 
-/*About me */
 
-#aboutMe{
-  height: 80vh;
-  background-color: #673AB7;
+.section-main{
+
+    
 }
+.section-main input{
+  margin-top: 7rem;
+  border-color: #d50000;
+    text-decoration: none;
+    list-style-type: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 1px;
+  background-color: transparent;
+  height: 3rem;
+  width: 10rem;
+
+}
+
+/*About me */
+#aboutMe{
+  background-color: white;
+    color: black;
+}
+#circlePic{
+    background: url('../imgs/thabo.JPG')no-repeat center/cover;
+    background-position: right 0px bottom -6px;
+    margin: 0 auto;
+    padding: 0;
+    
+    height: 12.5rem;
+    width:18%;
+
+}
+
+
+
 
 /* Util classes */
 .container{
+    height: 80vh;
   max-width: 1190px;
   text-align: center;
   margin: 0 auto;
   padding: 0 3rem;
 }
+input::-moz-focus-inner {
+  border: 0;
+}
+
 
 
 
 
 @media screen and (max-width: 783px) {
   .on-small {
-    display: none;
+    display: ;
   }
+ .none-on-small{
+        
+    }
 
   #showcase {
-    height: 50vh;
+    height: 70vh;
   }
 
   #showcase .container {
@@ -150,11 +184,25 @@ img{
 
   #showcase h1 {
     font-size: 3rem;
+    
   }
 
   #showcase h2 {
     font-size: 1.5rem;
   }
+.section-main input{
+  margin-top: 2rem;
+  border-color: #d50000;
+    text-decoration: none;
+    list-style-type: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 1px;
+  background-color: transparent;
+  height: 3rem;
+  width: 10rem;
+
+}
 
   nav {
     height: auto;
@@ -179,3 +227,6 @@ img{
   nav a:hover {
     background: #444;
   }
+    .container{
+        height: 90vh;
+    }
