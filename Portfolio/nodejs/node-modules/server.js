@@ -1,5 +1,5 @@
 const HTTP = require('http');
-
+const p = 8080;
 var server = HTTP.createServer(function(res,req){
-  console.log("hello, how are you. I'm great");
-}).listen(8080);
+  console.log("Server listening on "+p);
+}).listen(p);
