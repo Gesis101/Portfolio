@@ -1,8 +1,9 @@
-const DATE = new Date();
-var hour = DATE.getHours();
-var min = DATE.getMinutes();
+const DATE1 = new Date();
+var hour = DATE1.getHours();
+var min = DATE1.getMinutes();
 var greeting;
 var el = document.querySelector("#welcome");
+var el1 = document.querySelector('#putDate');
 
 var currentGreetings = function () {
     switch(true){
@@ -20,6 +21,7 @@ var currentGreetings = function () {
     } 
 
     return greeting;
-}   
+} ;  
 
 el.innerHTML = currentGreetings();
+

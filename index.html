@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -8,8 +7,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" href="imgs/thabo - Copy.JPG">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title> T Moyo Portfolio</title>
+    <title> Thabo Moyo</title>
 
 </head>
 
@@ -85,7 +85,7 @@
                 <div class="whoAmI bo2">
                     <h3> What do I do ? </h3>
                     <p style="text-align: left;">I mainly focus on building Web Applications from <strong>Front-End</strong>
-                        using common front technologies such as
+                        using common front end technologies such as
                         <strong> React </strong>, <strong> HTML/CSS</strong> and <strong>JavaScript</strong> to <strong>
                             Back-End</strong>
                         using mostly <Strong>PHP</Strong> for University projects and <strong>Node.JS</strong> for my
@@ -101,17 +101,23 @@
                 </div>
             </div>
 
-            <h3 class="h3-skill" id="h3-skill">My skills</h3>
+            <h3 class="h3-skill" id="h3-skill">Skills Overview</h3>
 
-            <h3 class="h3-mobile" id="h3-mobile">My skills</h3>
+            <h3 class="h3-mobile" id="h3-mobile">Skils Overview</h3>
             <div class="skill-wrapper">
                 <button id="hello"><img id="prev" src="imgs/prev.png"> </button>
                 <div class="slide slide1">
                     <div class="slide-content">
-                        <h4> BACK-END</h4>
+                        <h4  style="padding-bottom:3rem;"> BACK-END</h4>
                         <div class="content descr">
 
-                            <p> Most of my time on the web, I do back-end work........
+                            <p> Back-End is the area I personally enjoy the most, I find a lot of joy creating dynamic websites.
+                                PHP is the first language I learnt along with SQL. I was able to create full dynamic websites with user
+                                authentication with the two. My skills were further improved from the 'client-server' University module
+                                where I learnt to create effiecient databases.
+                                <br>
+                                Out of interest, I self-taught NodeJS and MongoDB during my spare time. This simple handles data on NodeJS.
+                                I am able to replicate what I can do in PHP with NodeJS
                             </p>
                         </div>
                         <div class="content bar-1">
@@ -146,19 +152,15 @@
                 <!--End of slide1 first content . Above is slide-content-->
                 <div class="slide slide2">
                     <div class="slide-content">
-                        <h4> FRONT-END</h4>
+                        <h4 style="padding-bottom:3rem;"> FRONT-END</h4>
                         <div class="content descr" id="descri">
-                            <p>I am currently a second year Computer Science with Web Development at the University of
-                                Salford. I am very determined individual and I'm go out of my comfort zone to achieve
-                                my
-                                anything I desire. I love technology and have been since
-                                a young age. My main goal is to continue developing myself and become the best
-                                developer I
-                                can be!
-                                Besides computers, I am also into landscape/portrait photography. Check out my
-                                photography
-                                page for more information if interested.
-                                I have a diverse set of skills, mainly as a flil stack developer.
+                            <p> Learning front-end was the first step to get closer to my desire to be a full stack developer.
+                                I have learnt how the DOM works and how to manipulate HTML elements with CSS. I then learnt
+                                how to make pages interactive with JS. I was able to apply previous OOP knowledge to JS which
+                                made the learning process easier.
+                                <br>
+                                To help with development speed, I learnt frameworks/libraries such as Bootstrap, React and CSSgrid which helps a lot 
+                                to keep a responsive page.
                             </p>
                         </div>
                         <div class="content bar-2">
@@ -192,20 +194,16 @@
                 <!--End of slide1 first content . Above is slide-content-->
                 <div class="slide slide2">
                     <div class="slide-content">
-                        <h4> SOFTWARE DEVELOPMENT</h4>
+                        <h4  style="padding-bottom:3rem;"> SOFTWARE DEVELOPMENT</h4>
                         <div class="content descr">
 
-                            <p>I am currently a second year Computer Science with Web Development at the University of
-                                Salford. I am very determined individual and I'm go out of my comfort zone to achieve
-                                my
-                                anything I desire. I love technology and have been since
-                                a young age. My main goal is to continue developing myself and become the best
-                                developer I
-                                can be!
-                                Besides computers, I am also into landscape/portrait photography. Check out my
-                                photography
-                                page for more information if interested.
-                                I have a diverse set of skills, mainly as a flil stack developer.
+                            <p>
+                                During my time, I have exposed myself to object oriented programming and have self taught the fundamentals of OOP which
+                                helped me a lot during my first year. Over time, I started to build small projects to improve my 
+                                understanding.
+                                <br>
+                                My second year in University has also improved my knowledge of OOP by assisting me to write good standard and well 
+                                structured code by making use of design patterns, inheritence and encapsulation ..etc. 
                             </p>
                         </div>
                         <div class="content bar-3">
@@ -254,7 +252,8 @@
 
                 <div class="projectContent">
                         <p>Coming soon...</p>
-                        <p style="color: orange; padding-top: 30px;">Currently: Trying to add previous projects to live server <br> without affecting security</p>
+                        <p style="color: orange; padding-top: 30px;">Currently: Trying to add previous projects to my live server <br> without affecting speed</p>
+                        <p id="putDate"></p>
                 </div>
         </div>
     </section>
@@ -268,22 +267,17 @@
             <h1> CONTACT ME </h1>
            <div class="main-contact">
                 <div class="form-main">
-                    <form id="form1" method="POST">
+                    <form id="form1"  action="#">
                         <div class="form-inputs">
-                            <input type="text" value=" Name *">
-                            <input type="email" value=" Email *">
-                            <input type="text" value=" Subject">
-                            <select name="Reason" form="form1">
-                                    <option value="sayhi">Just to say hi</option>
-                                    <option value="Business">Business</option>
-                                    <option value="sayhi">Social Media</option>
-                                    <option value="other">Other</option>
-                            </select>
-                            <textarea name="message" form="form1">Enter message here *</textarea>
-                         </div>
-                         <div class="form-submit">
-                            <input type="submit" value="Send"> 
-                         </div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                            <label for="subjext">Subject</label>
+                            <input type="text" id="subject">
+                            <label for="textarea">Message</label>
+                            <textarea rows="5" cols="30" name="message" form="form1" id="textarea">Enter message here *</textarea>
+                            <button type="submit"> Submit</button> 
                     </form>
                 </div>
            </div>
@@ -296,17 +290,19 @@
     <!-- Social media -->
     <section class="section follow" id="follow">
         <div class="container jrny-content">
-            <h3 style="letter-spacing:2px;"> FOLLOW THE JOURNEY </h3>
+            <h3 style="letter-spacing:3px;"> FOLLOW THE JOURNEY </h3>
             <div class="social-media">
-            <a href="#"><img src="imgs/instaIcon.png"></a>
-            <a href="#"><img src="imgs/gitIco.png"></a>
+            <a href="https://www.instagram.com/monsterpcs/"><img src="imgs/instaIcon.png"></a>
+            <a href="https://github.com/Gesis101"><img src="imgs/gitIco.png"></a>
             <a href="https://www.linkedin.com/in/thabo-moyo"><img id="liIcon" src="imgs/linkedIN.png"></a>
-            <a href="#"><img src="imgs/emailIcon.png"></a>
+            <a href="mailto:thabo.s.moyo@gmail.com"><img src="imgs/emailIcon.png"></a>
         </div>
     </section>
 
     <!-- footer -->
-
+    <footer>
+        <p> Copyright Thabo Moyo</p>
+    </footer>
 
 
     <script type="text/javascript" src="js/basic.js"></script>

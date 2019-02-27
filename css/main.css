@@ -10,8 +10,7 @@ body {
     color: white;
     margin: 0;
     line-height: 1.6;
-    width: 100%;
-    height: auto;
+  
 
 }
 body *{
@@ -131,13 +130,13 @@ img {
 
 
 .section-main input {
-    margin-top: 7rem;
+    margin-top: 20rem;
     border-color: #d50000;
     text-decoration: none;
     list-style-type: none;
-    font-weight: bold;
+  
     color: white;
-    border-radius: 1px;
+    border-radius: 0.5rem;
     background-color: transparent;
     height: 3rem;
     width: 10rem;
@@ -147,7 +146,7 @@ img {
 
 /*About me */
 #aboutMe {
-    background-color: white;
+    background-color:white;
     color: black;
     height: auto;
     width: 100%;
@@ -191,7 +190,7 @@ img {
     width: 100%;
     margin: 0;
     padding: 0;
-
+    padding-top: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -293,44 +292,108 @@ img {
     margin: 10px;
 }
 
-/* Contaxt area */
+/* Contact area */
 #contact{
 
     color:black;
     height: 70vh;
     width: 100%;
     
+    background: white;
+    
+}
+
+#contact h1{
+    font-size: 23pt;
+
 }
 
 .main-contact{
-    width: 100%;
-    height: 500px; /* Change this */
+    width: 90%;
+    height: 60vh; /* Change this */
 
     margin: 0 auto;
     left: 0;
     right: 0;
     position: relative;
-    box-shadow: -1px 1px 23px -2px rgba(0,0,0,0.75);
-    border-radius: 5px;
+
     background-color: white;
     opacity: 0.9;
 
-}
-#form1{
-   
-}
+    margin-top: 10rem;
 
-#form1{
-    width: 40%;
+}
+ 
+
+
+.form-inputs{
+    width: 90%;
+    height: auto;
     margin: 0 auto;
+
 
     display:flex;
     flex-direction: column;
+    
+
 }
-#form1 *{
-    width: 100%;
-    height: auto;
+
+.form-inputs input{
+    height: 1rem;
+    margin-bottom: 1rem;
 }
+
+input[type="text"], input[type="email"], textarea
+{
+    font-size:16px;
+    padding-left: 1rem;
+}
+.form-inputs button[type="submit"]{
+    width: 8rem;
+    height: 3rem;
+    padding: 0.5;
+    margin-top: 2rem;
+    
+    text-align: center;
+
+    border: 2px solid #0C142C;
+    border-radius: 0.5rem;
+
+    letter-spacing: 1.5px;
+    color: white;
+    
+    background-color: #0C142C;
+    
+}
+
+textarea{
+    text-align: left;
+
+}
+
+.form-inputs *{
+    width: 70%;
+    margin: 0 auto;
+    float: left;
+   
+}
+
+.form-inputs input, textarea{
+    border: 1px solid black;
+    opacity: 0.7;
+    border-radius: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+} 
+.form-inputs label{
+    float: left;
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+
+/* End of Contact are */
+
 /* follow the journey */
 
 #follow{
@@ -338,9 +401,9 @@ img {
 }
 
 .social-media img{
-    width: 50px;
+    width: 30px;
     height: auto;
-    padding-right: 10px;
+    margin: 1rem;
     
 }
 
@@ -364,9 +427,9 @@ button {
     border-bottom: 2px solid #d50000;
     margin: 0 auto;
     width: 500px;
-    padding-top: 50px;
+    margin-top: 50px;
     margin-bottom: 1rem;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     letter-spacing: 2px;
 }
 
@@ -381,7 +444,12 @@ button {
 }
 
 .js {
-    text-align: end;
+    text-align: -webkit-right;
+    text-align: -moz-right;
+    text-align: -o-right; 
+    text-align: -ms-right;
+    text-align: right;
+
     color: white;
     padding-bottom: 5px;
     padding-right: 1rem;
@@ -446,15 +514,19 @@ button {
 .spread-bar {
 
     text-align: left;
+    text-align: -webkit-left;
+    text-align: -moz-left;
+    text-align: -o-left; 
+    text-align: -ms-left;
     margin: 0;
-    padding-left: 2rem;
+    margin-left: 2rem;
     width: 100%;
     height: 55px;
 
 }
 
 .spread-bar>p {
-    padding-left: 20px;
+    margin-left: 20px;
     text-transform: uppercase;
     font-weight: bold;
 
@@ -500,10 +572,11 @@ button, input[type="submit"], input[type="reset"] {
 
 
 /* Media queries only */
-@media screen and (max-width: 600px) {
+@media all and (max-width: 750px) {
     .on-small {
         /* display: none;*/
     }
+    
 
     html{
         overflow: hidden;
@@ -584,6 +657,7 @@ button, input[type="submit"], input[type="reset"] {
     .description{
         width:95%;
         display: flex;
+        display: -webkit-flex;
         flex-direction: column;
         align-items: flex-start;
 
@@ -694,7 +768,14 @@ button, input[type="submit"], input[type="reset"] {
 
 
     #follow{
-        height: 20vh;
+        height: 10vh;
+    }
+
+    #contact{
+        height: 70vh;
+    }
+    .main-contact{
+        margin: 0;
     }
 
 }
