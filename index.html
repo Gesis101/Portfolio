@@ -40,7 +40,7 @@
                         <li  style="display: none;">
                             <a href="#">Photography</a>
                         </li>
-                        <li>
+                        <li id="cv">
                             <a href="cv.html">CV</a>
                         </li>
                         
@@ -101,25 +101,17 @@
                 </div>
             </div>
 
-            <h3 id="h3-skill">My skills</h3>
+            <h3 class="h3-skill" id="h3-skill">My skills</h3>
+
+            <h3 class="h3-mobile" id="h3-mobile">My skills</h3>
             <div class="skill-wrapper">
-                <button><img id="prev" src="imgs/prev.png"> </button>
+                <button id="hello"><img id="prev" src="imgs/prev.png"> </button>
                 <div class="slide slide1">
                     <div class="slide-content">
                         <h4> BACK-END</h4>
                         <div class="content descr">
 
-                            <p>I am currently a second year Computer Science with Web Development at the University of
-                                Salford. I am very determined individual and I'm go out of my comfort zone to achieve
-                                my
-                                anything I desire. I love technology and have been since
-                                a young age. My main goal is to continue developing myself and become the best
-                                developer I
-                                can be!
-                                Besides computers, I am also into landscape/portrait photography. Check out my
-                                photography
-                                page for more information if interested.
-                                I have a diverse set of skills, mainly as a flil stack developer.
+                            <p> Most of my time on the web, I do back-end work........
                             </p>
                         </div>
                         <div class="content bar-1">
@@ -246,7 +238,7 @@
                     </div>
                 </div>
                 <!--End of slide1 first content . Above is slide-content-->
-                <button><img id="next" src="imgs/next.png"> </button>
+                <button id="hello"><img id="next" src="imgs/next.png"> </button>
             </div> <!-- end of skill wrapper-->
         </div> <!--   end of container abut section  -->
 
@@ -261,12 +253,8 @@
             <h4 id="h4">Projects compeleted <h4>
 
                 <div class="projectContent">
-                    <div class="pro1"> 
-                        <a href=""><img src="imgs/Group%204.png"></a>
-                    </div>
-                    <div class="pro2"> 
-                        <a href=""><img src="imgs/Group%204.png"></a>
-                    </div>
+                        <p>Coming soon...</p>
+                        <p style="color: orange; padding-top: 30px;">Currently: Trying to add previous projects to live server <br> without affecting security</p>
                 </div>
         </div>
     </section>
@@ -278,10 +266,30 @@
     <section class="section" id="contact">
         <div class="container">
             <h1> CONTACT ME </h1>
-            <p>
-                <p>
+           <div class="main-contact">
+                <div class="form-main">
+                    <form id="form1" method="POST">
+                        <div class="form-inputs">
+                            <input type="text" value=" Name *">
+                            <input type="email" value=" Email *">
+                            <input type="text" value=" Subject">
+                            <select name="Reason" form="form1">
+                                    <option value="sayhi">Just to say hi</option>
+                                    <option value="Business">Business</option>
+                                    <option value="sayhi">Social Media</option>
+                                    <option value="other">Other</option>
+                            </select>
+                            <textarea name="message" form="form1">Enter message here *</textarea>
+                         </div>
+                         <div class="form-submit">
+                            <input type="submit" value="Send"> 
+                         </div>
+                    </form>
+                </div>
+           </div>
+           <div>
 
-
+           </div>
         </div>
     </section>
 

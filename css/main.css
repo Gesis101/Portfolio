@@ -11,6 +11,10 @@ body {
     width: 100%;
     height: auto;
 }
+body *{
+    padding: 0;
+    margin: 0;
+}
 
 /* Navigaton bar */
 nav {
@@ -258,10 +262,17 @@ img {
 
 /* Projects area */
 
+
+#projects{
+    height: 30vh;
+    
+
+}
 .projectContent {
     padding-top: 3rem;
-    width: 70%;
-    display: inline-flex;
+    width: 100%;
+   
+    text-align: center;
 }
 
 .projectContent img {
@@ -280,9 +291,48 @@ img {
 }
 
 /* Contaxt area */
+#contact{
+    background: url("../imgs/backgroundGlobal.png") no-repeat center/cover;
+    color:black;
+    height: 70vh;
+    width: 100%;
+    
+}
 
+.main-contact{
+    width: 100%;
+    height: 500px; /* Change this */
 
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: relative;
+    box-shadow: -1px 1px 23px -2px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.9;
+
+}
+#form1{
+   
+}
+
+#form1{
+    width: 40%;
+    margin: 0 auto;
+
+    display:flex;
+    flex-direction: column;
+}
+#form1 *{
+    width: 100%;
+    height: auto;
+}
 /* follow the journey */
+
+#follow{
+    height: 30vh;
+}
 
 .social-media img{
     width: 50px;
@@ -303,8 +353,11 @@ button {
     outline: inherit;
 }
 
+#h3-mobile{
+    display: none;
+}
 
-#h3-skill {
+.h3-skill {
     border-bottom: 2px solid #d50000;
     margin: 0 auto;
     width: 500px;
@@ -461,13 +514,16 @@ button, input[type="submit"], input[type="reset"] {
         width: 90%;
         padding: 0;
         margin: 0;
+        margin: 0 auto;
+        min-height:90vh;
+        overflow: visible;
     }
 
     .none-on-small {}
 
     #showcase {
         height: 75vh;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -494,16 +550,105 @@ button, input[type="submit"], input[type="reset"] {
         height: 3rem;
         width: 10rem;
 
+    } 
+
+    .about{
+        position: relative;
+        width: 100%;
+        min-height: 200vh;
+    }
+
+    .about *{
+        width: 100%;
+        height: auto;
+   
+        padding: 0;
+        
+       
+        font-size: 10pt;
+        align-content: center;
+        align-items: center;
+    }
+
+    .description{
+        width:95%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin: 0 auto;
+        margin-right: 10px;
+    
+        margin-top: 1rem;
+        padding:0;
+
+
+    }
+    .h3-skill{
+       display: none !important;
+       visibility: hidden;
+    }
+    .h3-mobile{
+        visibility: visible;
+        border-bottom: 2px solid #d50000;
+
+    }
+
+
+    .skill-wrapper
+    {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+
+    }
+    #hello, #prev, #next{
+        width: 2rem;
+        height: auto;
+        position: absolute;
+        padding: 1rem;
+        top: 160px;
+    }
+    #next{
+        left: 0;
+        padding-left: 20.5rem;
+
+    }
+    #prev{
+        padding-right: -3.3rem;
+    }
+    .content{
+        width: 70%;
+        margin: 1rem;;
+        padding: 0;
+    }
+    .slide-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links{
+        display: inline-block;
+        color: transparent;
     }
 
     nav {
         height: auto;
         border-bottom: 0;
         transition: all 1s ease;
+        display: none;
+    }
+
+    #mainLogo img{ 
+        width: 10rem;
+        height:auto;
+        display: flex;
     }
 
     nav ul {
-        display: none;
         height: auto;
     }
 
@@ -511,6 +656,9 @@ button, input[type="submit"], input[type="reset"] {
         width: 100%;
         float: left;
         position: relative;
+    }
+    #cv{
+        display: none;
     }
 
     nav a {
@@ -528,5 +676,10 @@ button, input[type="submit"], input[type="reset"] {
 
     .container {
         height: 90vh;
+    }
+
+
+    #follow{
+        height: 20vh;
     }
 }
