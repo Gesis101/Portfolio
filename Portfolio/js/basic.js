@@ -23,7 +23,3 @@ var currentGreetings = function () {
 }   
 
 el.innerHTML = currentGreetings();
-
-
-
-

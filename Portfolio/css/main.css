@@ -1,9 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #0A0A0A;
     color: white;
     margin: 0;
     line-height: 1.6;
+    width: 100%;
+    height: auto;
 }
 
 /* Navigaton bar */
@@ -18,11 +24,14 @@ nav {
 
     background-color: #0A0A0A;
     box-shadow: 2px 4px 16px 0px black;
+    align-items:center;
 }
 
 .links a {
     text-decoration: none;
     color: white;
+    
+
 }
 
 .links li a:hover {
@@ -36,11 +45,13 @@ nav {
 .links li {
     display: inline-block;
     margin-left: 20px;
+    
 }
 
 .links {
     position: absolute;
-    right: 10px;
+    right: 29px;
+    
 }
 
 #mainLogo {
@@ -66,8 +77,10 @@ li {
 .section {
     padding: 2rem 0;
     width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
 }
-
 
 
 /* showcase image*/
@@ -84,6 +97,7 @@ li {
 
 #showcase .container {
     margin-top: 25vh;
+    position: relative;
 }
 
 #showcase h1 {
@@ -101,7 +115,7 @@ li {
     line-height: 2.6;
     letter-spacing: 0.2rem;
     border-bottom: solid #d50000;
-    ;
+
     text-underline-position: below;
 }
 
@@ -136,12 +150,13 @@ img {
 #aboutMe {
     background-color: white;
     color: black;
-    height: 95vh;
+    height: auto;
+    width: 100%;
 }
 
 #circlePic {
     background: url('../imgs/thabo.JPG')no-repeat center/cover;
-    background-position:left 25% bottom -6.7px;
+    background-position: left 25% bottom -6.7px;
     background-size: 200px;
     margin: 0 auto;
     padding: 0;
@@ -163,18 +178,65 @@ img {
 
 }
 
-.about {
-
-}
-
-.whoAmI{
-    display: inline-block;
-    padding: 0;
+.skill-wrapper {
+    width: 100%;
     margin: 0 auto;
-    width: 49.7%;
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+
 }
+
+.slide-content {
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+/* Actual about- skills content. Description and skills charts */
+.content {
+    width: 40%;
+    ;
+    display: inline-block;
+    height: 300px;
+    align-items: flex-start;
+}
+
+
+
+.description {
+    width: 100%;
+    display: inline-flex;
+    justify-content: left;
+    flex: 1;
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+}
+
+.whoAmI {
+
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin: 0 auto;
+
+
+    margin-top: 3rem;
+
+}
+
+
+
 /* About me headline borders */
-.whoAmI h3, .mySkill h3{
+.whoAmI h3, .mySkill h3, #h4{
     border-bottom: 2px solid #d50000;
     margin: 0 auto;
     width: 200px;
@@ -183,91 +245,199 @@ img {
     letter-spacing: 2px;
 }
 
-#description1 >  p{
-    padding-top: 2rem;
-    padding-right: 2rem;
+.content h4 {
+    margin: 0 auto;
 }
 
-.skill-wrapper{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
+.descr {
+    margin-bottom: 5rem;
 }
-#prev, #next{
+
+#prev,
+#next {
     width: 50px;
     height: auto;
     margin: 0 auto;
     padding: 4rem;
     position: relative;
-     
-}
-.mySkill{
-    padding-top: 30px;
-    width: 60%;
-    padding-bottom: 3rem;
+
+
 }
 
-#skill2,#skill3,#description2, #description3{
-    display: none;
+/* Projects area */
+
+.projectContent {
+    padding-top: 3rem;
+    width: 70%;
+    display: inline-flex;
 }
 
-#h3-skill{
+.projectContent img {
+    width: 100%;
+    height: auto;
+}
+
+#projects h1{
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+}
+#h4{
+    text-transform: uppercase;
+    display: inline;
+    margin: 10px;
+}
+
+/* Contaxt area */
+
+
+/* follow the journey */
+
+.social-media img{
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+    
+}
+
+
+/* Removes all styling on buttons */
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+
+#h3-skill {
     border-bottom: 2px solid #d50000;
     margin: 0 auto;
     width: 500px;
     padding-top: 50px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding-bottom: 12px;
     letter-spacing: 2px;
 }
 
 
-#progress-bar{
+#progress-bar {
     background-color: black;
     border-radius: 13px;
     /* (height of inner div) / 2 + padding */
     padding: 3px;
-    
+    width: 100%;
+    height: auto;
 }
 
-.spread-bar{
-    
+.js {
+    text-align: end;
+    color: white;
+    padding-bottom: 5px;
+    padding-right: 1rem;
+    height: 100%;
+}
+
+/* Skill percentages 
+     Back-end
+*/
+
+.bar-1 #percent1 {
+    width: 70%;
+}
+
+.bar-1 #percent2 {
+    width: 60%;
+}
+
+.bar-1 #percent3 {
+    width: 65%;
+}
+
+.bar-1 #percent4 {
+    width: 40%;
+}
+
+/* Front-end */
+.bar-2 #percent1 {
+    width: 85%;
+}
+
+.bar-2 #percent2 {
+    width: 70%;
+}
+
+.bar-2 #percent3 {
+    width: 60%;
+}
+
+.bar-2 #percent4 {
+    width: 80%;
+}
+
+/* Software development */
+
+.bar-3 #percent1 {
+    width: 65%;
+}
+
+.bar-3 #percent2 {
+    width: 35%;
+}
+
+.bar-3 #percent3 {
+    width: 50%;
+}
+
+.bar-3 #percent4 {
+    width: 70%;
+}
+
+.spread-bar {
+
     text-align: left;
     margin: 0;
     padding-left: 2rem;
- 
-    
+    width: 100%;
+    height: 55px;
+
 }
-.spread-bar >p {
+
+.spread-bar>p {
     padding-left: 20px;
-    text-transform:uppercase;
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
 
-#progress-bar>div{
-    background-color: #d50000 ;
+#progress-bar>div {
+    background-color: #d50000;
     /* Adjust with JavaScript */
-    height: 20px;
+    height: 1rem;
     border-radius: 10px;
-    
+
 }
 
-.mySkill #js:nth-child(1){
-    width: 50%;
-}
+
+
+
 
 
 /* Util classes */
 .container {
-    height: 90vh;
-    max-width: 1190px;
+    min-height: 90vh;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
-    padding: 0 3rem;
 }
 
 input::-moz-focus-inner {
     border: 0;
 }
+
+/*
 button, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
@@ -277,33 +447,47 @@ button, input[type="submit"], input[type="reset"] {
 	cursor: pointer;
 	outline: inherit;
 
-
-
+}
+*/
 
 
 /* Media queries only */
-@media screen and (max-width: 783px) {
+@media screen and (max-width: 700px) {
     .on-small {
-      /* display: none;*/
+        /* display: none;*/
+    }
+
+    body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        left: 0;
+    }
+
+    .container,
+    .section-main {
+        width: 90%;
+        padding: 0;
+        margin: 0;
     }
 
     .none-on-small {}
 
     #showcase {
-        height: 70vh;
+        height: 75vh;
+        width: 90%;
+        margin: 0 auto;
     }
+
 
     #showcase .container {
         margin-top: 15vh;
     }
 
-    #showcase h1 {
-        font-size: 3rem;
-
-    }
+  
 
     #showcase h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .section-main input {
@@ -323,6 +507,7 @@ button, input[type="submit"], input[type="reset"] {
     nav {
         height: auto;
         border-bottom: 0;
+        transition: all 1s ease;
     }
 
     nav ul {
@@ -342,6 +527,7 @@ button, input[type="submit"], input[type="reset"] {
         text-indent: 25px;
         background: #333;
         border-bottom: 1px solid #555;
+        transition: all 1s ease;
     }
 
     nav a:hover {
