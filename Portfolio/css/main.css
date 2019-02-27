@@ -21,38 +21,30 @@ nav {
     top: 0px;
     left: 0px;
     z-index: 1000;
-
+  
     background-color: #0A0A0A;
     box-shadow: 2px 4px 16px 0px black;
-    align-items:center;
-}
-
-.links a {
+    align-items: center;
+  }
+  .links a{
     text-decoration: none;
     color: white;
-    
-
-}
-
-.links li a:hover {
+  }
+  .links li a:hover{
     line-height: 1em;
     padding-bottom: 1rem;
     border-bottom: 2px solid #d50000;
     color: #d50000;
     transition: 0.6s;
-}
-
-.links li {
+  }
+  .links li{
     display: inline-block;
     margin-left: 20px;
-    
-}
-
-.links {
+  }
+  .links {
     position: absolute;
-    right: 29px;
-    
-}
+    right: 10px;
+  }
 
 #mainLogo {
     float: left;
