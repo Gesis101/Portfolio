@@ -148,6 +148,7 @@ img {
 #aboutMe {
     background-color:white;
     color: black;
+    display: grid;
     height: auto;
     width: 100%;
 }
@@ -182,6 +183,7 @@ img {
     display: flex;
     padding-top: 2rem;
     align-items: center;
+    justify-content: center;
 
 }
 
