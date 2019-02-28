@@ -17,7 +17,7 @@
     <!-- Navagation and showcase -->
     <div id="showcase">
         <header>
-            <nav class="cf">
+            <nav class="cf" id="desk-nav">
                 <ul class="cf">
                     <li id="mainLogo" class="to-small">
                         <img id="logoImg" src="imgs/Symbol%201%20%E2%80%93%201.png">
@@ -43,39 +43,40 @@
                         <li id="cv">
                             <a href="cv.html">CV</a>
                         </li>
-                        <li style="display:none"><svg class="svg" width="30" height="30">
-                            <path d="M0,5 30,5" stroke="#ffffff"
-                            stroke-width="5"/>
-                            <path d="M0,14 30,14" stroke="#ffffff"
-                            stroke-width="5"/>
-                            <path d="M0,23 30,23" stroke="#ffffff"
-                            stroke-width="5"/>
-                            </svg> 
-                        </li>
+                        
                     </ul> 
                 </div>
-           
-         
-            <div style="display:none" id="side-menu" class="side-nav">
-                    <a href="#" id="btn-close" class="btn-close">&times;</a>
-                    <a href="#">Home</a>
-                    <a href="#">About me</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact</a>
-            </div>
+        </nav>
+        <nav id="mobile-nav">
+                <img id="logoImg" src="imgs/Symbol%201%20%E2%80%93%201.png">
+                <svg class="svg" id="svg" width="30" height="30">
+                        <path d="M0,5 50,5" stroke="#d50000"
+                        stroke-width="3"/>
+                        <path d="M0,14 50,14" stroke="#d50000"
+                        stroke-width="3" />
+                        <path d="M0,23 50,23" stroke="#d50000"
+                        stroke-width="3"/>
+                    </svg> 
+                <div id="mobile-side-menu" class="side-nav">
+                        <button id="btn-close" class="btn-close"><h2 id="clo" style="font-size: 30pt;">&times;</h2></a>
+                        <a href="#">Home</a>
+                        <a href="#aboutMe">About me</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                </div>
         </nav>
         </header>
         <div class="section-main container">
-            <h1 id="welcome" style="letter-spacing: 10px;"> </h1>
-            <h2> <span id="welcome2">I'M THABO MOYO</span></h2>
-            <h3> Full Stack Junior Developer </h3>
+            <h1 id="welcome" style="letter-spacing: 5px; font-size: 30pt; margin-top: 5.1rem;"> </h1>
+            <h2> <span id="welcome2">I'M THABO</span></h2>
+            <h3> Developer  &#9679; Photographer  &#9679; Student </h3>
             <form action="#contact">
                 <input type="submit" value="GET IN TOUCH" />
             </form>
         </div>
     </div>
     <!-- About me section (Add some animations/Js with some skills etc)-->
-    <section class="section clearfix" id="aboutMe">
+    <section class="section-main clearfix" id="aboutMe">
         <div class="container about">
             <h1>ABOUT ME</h1>
             <div id="pic">
@@ -262,7 +263,7 @@
 
     </section>
     <!-- Projects section -->
-    <section class="section" id="projects">
+    <section class="section-main" id="projects">
         <div class="container"> 
             <h1> Projects </h1>
             <h4 id="h4">Projects compeleted <h4>
@@ -309,15 +310,20 @@
         <div class="container jrny-content">
             <h3 style="letter-spacing:3px;"> FOLLOW THE JOURNEY </h3>
             <div class="social-media">
-            <a href="https://www.instagram.com/monsterpcs/"><img src="imgs/instaIcon.png"></a>
-            <a href="https://github.com/Gesis101"><img src="imgs/gitIco.png"></a>
-            <a href="https://www.linkedin.com/in/thabo-moyo"><img id="liIcon" src="imgs/linkedIN.png"></a>
-            <a href="mailto:thabo.s.moyo@gmail.com"><img src="imgs/emailIcon.png"></a>
+                <a href="https://www.instagram.com/monsterpcs/"><img src="imgs/instaIcon.png"></a>
+                <a href="https://github.com/Gesis101"><img src="imgs/gitIco.png"></a>
+                <a href="https://www.linkedin.com/in/thabo-moyo"><img id="liIcon" src="imgs/linkedIN.png"></a>
+                <a href="mailto:thabo.s.moyo@gmail.com"><img src="imgs/emailIcon.png"></a>
+            </div>
+            <div class="comingsoon">
+                <h4>Coming soon...</h4>
+                <a><img src="imgs/youtubeIcon.png"></a>
+            </div>
         </div>
     </section>
 
     <!-- footer -->
-    <footer>
+    <footer class="section">
         <p> &copy; Copyright Thabo Moyo</p>
     </footer>
 

@@ -9,15 +9,19 @@ const module = (function () {
     const skill2 = document.querySelector('#skill2');
     const skill3 = document.querySelector('#skill3');
     const skillWidth = document.querySelector('.whoAmI').offsetWidth;
-    //Slider div
+    //showcase image and slide
+    let logoImg = document.querySelector('#logoImg');
     let sliderImage = document.querySelectorAll(".slide");
+    //Mobile slide elements
+    let svg_btn = document.querySelector('#svg');
     let btn_close = document.querySelector('#btn-close');
-    let side_menu = document.querySelector('#side-menu');
-
+    let mobileMenu = document.querySelector('#mobile-side-menu');
     //private vars 
     var count = 0;
     var skillNumber = 1;
     var currentSkill = 1;
+
+    var prevScrollPos =  window.pageYOffset;
 
 
     var displayNone = function (input) {
@@ -64,36 +68,38 @@ const module = (function () {
     }
 
     //Next slide :  (items fixed to 3, need to add if more sections added to html)
-    var nextSlide = function () {
+    var nextSkill = function () {
         reset();
         sliderImage[count+1].style.display = "block";
         count++;
     };
 
     //previous slide
-    var prevSlide = function () {
+    var prevSkill = function () {
         reset();
         sliderImage[count-1].style.display = "block";
         count--;
     };
 
-    //Open slide menu
-    var openSlideMenu = function(){
-        side_menu.style.width = "250px";
-    };
+    //Open mobile slide menu
+    var openSideMenu = function(){
+        mobileMenu.style.width = "230px";
+        svg_btn.style.display = "none" ;
 
-    var closeSlideMenu = function(){
-        side_menu.style.width = "0px";
-    };
+    }
+    //Close mobile side menu
+    var closeSideMenu = function(){
+        mobileMenu.style.width = "0";
+        svg_btn.style.display = "unset" ;
 
-
+    }
     //event handler
     next.addEventListener("click", function () {
         if(count === sliderImage.length-1){
          count = -1;
         }
         console.log("logged " + skillWidth + " count " + count + " length: " + sliderImage.length);
-        nextSlide();
+        nextSkill();
     });
 
     prev.addEventListener("click", function () {
@@ -101,24 +107,43 @@ const module = (function () {
             count = sliderImage.length;   
         }
         console.log("logged " + skillWidth + " count " + count + " length: " + sliderImage.length);
-        prevSlide();
+        prevSkill();
     });
 
+    svg_btn.addEventListener("click", function(){
+        openSideMenu();
+    })
+    btn_close.addEventListener("click", function(){
+        closeSideMenu();
+    })
    
-    btn_close.addEventListener("click", function() {
-        console.log("clicked");
-        openSlideMenu();
-    });
+
+    var ok = window.onscroll = function()
+    {
+        var currentScrollPos = window.pageYOffset;
+        console.log(prevScrollPos);
+        if(this.prevScrollPos > currentScrollPos){
+            logoImg.style.top = "0px";
+        }else{
+            logoImg.style.top = "-120px"
+        }
+    };
 
     return {
         skill: skill,
-        prevSlide: prevSlide,
-        nextSlide: nextSlide,
-        start: start
+        prevSkill: prevSkill,
+        nextSkill: nextSkill,
+        start: start,
+        openSideMenu: openSideMenu,
+        ok: ok
     }
 })();
 
 module.start();
+
+module.ok();
+
+
 
 
 
