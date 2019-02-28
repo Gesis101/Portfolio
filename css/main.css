@@ -13,7 +13,7 @@ body {
 
 
 /* Navigaton bar */
-#desk-nav{
+#desk-nav {
     position: fixed;
     display: grid;
     width: 100%;
@@ -25,7 +25,8 @@ body {
     box-shadow: 2px 4px 16px 0px black;
     align-items: center;
 }
-#mobile-nav{
+
+#mobile-nav {
     display: none;
 }
 
@@ -75,7 +76,7 @@ li {
 .section {
     padding: 2rem 0;
     width: 100%;
-    height: auto;
+
     position: relative;
     overflow: hidden;
 }
@@ -107,12 +108,12 @@ li {
     letter-spacing: rem;
 }
 
-#showcase h3{
+#showcase h3 {
     letter-spacing: 2px;
     font-weight: 60;
     text-transform: uppercase;
     margin-top: 2rem;
-   
+
 }
 
 #welcome2 {
@@ -130,6 +131,7 @@ li {
 img {
     width: 100%;
 }
+
 .section-main input {
     margin-top: 20rem;
     border-color: #d50000;
@@ -152,7 +154,7 @@ img {
     width: 100%;
     z-index: -12;
 
-  
+
 
 }
 
@@ -271,6 +273,7 @@ img {
 #projects {
     height: 40vh;
 }
+
 .projectContent {
     padding-top: 3rem;
     width: 100%;
@@ -383,7 +386,8 @@ textarea {
 
 /* End of Contact are */
 
-.follow, .section{
+.follow,
+.section {
     z-index: -999;
 }
 
@@ -391,15 +395,16 @@ textarea {
 
 .follow {
     height: 15vh;
-    
+
 }
 
-.jrny-content{
+.jrny-content {
     display: grid;
     grid-template-rows: 50px 100px 100px 50px;
     grid-template-columns: 1fr;
 }
-.jrny-content h3{
+
+.jrny-content h3 {
     font-weight: 69;
 }
 
@@ -545,7 +550,7 @@ button {
 
 /* Util classes */
 .container {
-    min-height: 90vh;
+  
     width: 90%;
     text-align: center;
     margin: 0 auto;
@@ -571,11 +576,13 @@ button, input[type="submit"], input[type="reset"] {
 /* Media queries only */
 @media only screen and (max-width : 750px) {
     .on-small {
-         display: none;
+        display: none;
     }
+
     html {
         overflow: hidden;
     }
+
     body {
         width: 100%;
         padding: 0;
@@ -583,11 +590,9 @@ button, input[type="submit"], input[type="reset"] {
         left: 0;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-        
     }
-  
 
-    #mobile-nav{
+    #mobile-nav {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -595,17 +600,16 @@ button, input[type="submit"], input[type="reset"] {
         height: 100%;
         position: fixed;
         top: 0;
-
-
     }
-    #mobile-nav img{
+
+    #mobile-nav img {
         width: 50%;
         justify-self: left;
         position: relative;
         top: 0;
     }
 
-    #svg{
+    #svg {
         margin: 2rem;
         justify-self: right;
         position: fixed;
@@ -613,75 +617,74 @@ button, input[type="submit"], input[type="reset"] {
         z-index: 9999;
     }
 
-    #svg:hover{  
+    #svg:hover {
         border-radius: 1rem;
         transition: 0.5s;
-        background-color:rgb(255, 255, 255) ;
+        background-color: rgb(255, 255, 255);
     }
 
-  
-    #mobile-side-menu{
+
+    #mobile-side-menu {
         color: black;
-        position:absolute;
+        position: absolute;
         justify-self: right;
         right: 0;
-        background-color:rgb(251, 250, 251);
+        background-color: rgb(251, 250, 251);
         height: 100vh;
         width: 0;
-        z-index: 999; 
-
+        z-index: 999;
         transition: 0.6;
-       
-    } 
-    
+    }
 
-    
-    #mobile-side-menu a{
+
+
+    #mobile-side-menu a {
         display: table;
         text-decoration: none;
         margin-bottom: 1rem;
-         font-size: 20pt;
-         z-index: 9999; 
-         color: black;
-    } 
-    #mobile-side-menu a:hover, #mobile-side-menu a:active{
+        font-size: 20pt;
+        z-index: 9999;
+        color: black;
+    }
+
+    #mobile-side-menu a:hover,
+    #mobile-side-menu a:active {
         width: 100%;
         background-color: rgb(98, 12, 12, 0.3);
         padding-bottom: 5px;
         padding-top: 5px;
         transition: 0.5s;
-      }
-    .side-nav h1{
+    }
+
+    .side-nav h1 {
         font-size: 10pt;
     }
 
-    #mobile-side-menu, #svg{
-        
-    }
 
-    #desk-nav{
+    #desk-nav {
         display: none;
     }
-    
+
     .container,
     .section-main {
         width: 90%;
         padding: 0;
         margin: 0 auto;
-        min-height: 90vh;
+        height: 90vh;
     }
 
     #showcase {
         height: 75vh;
         width: 100%;
         margin: 0 auto;
-        z-index:20;
+        z-index: 20;
     }
 
     #showcase .container {
         margin-top: 30vh;
     }
-    #showcase .container *{
+
+    #showcase .container * {
         margin-bottom: 3rem;
     }
 
@@ -765,7 +768,7 @@ button, input[type="submit"], input[type="reset"] {
         width: 100%;
     }
 
-  
+
     #follow {
         height: 10vh;
     }
@@ -773,6 +776,7 @@ button, input[type="submit"], input[type="reset"] {
     #contact {
         height: 70vh;
     }
+
     .main-contact {
         margin: 0;
     }
