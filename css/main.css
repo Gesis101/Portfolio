@@ -186,9 +186,8 @@ img {
 }
 
 .slide-content {
-
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     padding-top: 1rem;
     flex-direction: column;
@@ -198,15 +197,25 @@ img {
     flex: 1;
 }
 
+.slide{
+    margin: 0 auto;
+}
+
 /* Actual about- skills content. Description and skills charts */
 .content {
-    width: 40%;
-    ;
+    width: 400px;
     display: inline-block;
     height: 300px;
     align-items: flex-start;
+
+    margin: 0 auto;
+
 }
 
+.descr1{
+    width: 400px;
+    overflow: hidden
+}
 
 
 .description {
@@ -247,9 +256,7 @@ img {
     margin: 0 auto;
 }
 
-.descr {
-    margin-bottom: 5rem;
-}
+
 
 #prev,
 #next {
@@ -405,6 +412,10 @@ textarea{
     height: auto;
     margin: 1rem;
     
+}
+
+footer{
+    text-align: center;
 }
 
 
@@ -716,17 +727,22 @@ button, input[type="submit"], input[type="reset"] {
     .slide-content{
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .links{
         display: inline-block;
         color: transparent;
+        
     }
 
     nav {
         height: auto;
         border-bottom: 0;
         transition: all 1s ease;
+        display: none;
+    }
+    svg{
         display: none;
     }
 
@@ -738,12 +754,14 @@ button, input[type="submit"], input[type="reset"] {
 
     nav ul {
         height: auto;
+       
     }
 
     nav li {
         width: 100%;
         float: left;
         position: relative;
+        
     }
     #cv{
         display: none;

@@ -9,9 +9,10 @@ const module = (function () {
     const skill2 = document.querySelector('#skill2');
     const skill3 = document.querySelector('#skill3');
     const skillWidth = document.querySelector('.whoAmI').offsetWidth;
-    //var names to change & been used
+    //Slider div
     let sliderImage = document.querySelectorAll(".slide");
-
+    let btn_close = document.querySelector('#btn-close');
+    let side_menu = document.querySelector('#side-menu');
 
     //private vars 
     var count = 0;
@@ -76,6 +77,15 @@ const module = (function () {
         count--;
     };
 
+    //Open slide menu
+    var openSlideMenu = function(){
+        side_menu.style.width = "250px";
+    };
+
+    var closeSlideMenu = function(){
+        side_menu.style.width = "0px";
+    };
+
 
     //event handler
     next.addEventListener("click", function () {
@@ -92,6 +102,12 @@ const module = (function () {
         }
         console.log("logged " + skillWidth + " count " + count + " length: " + sliderImage.length);
         prevSlide();
+    });
+
+   
+    btn_close.addEventListener("click", function() {
+        console.log("clicked");
+        openSlideMenu();
     });
 
     return {
