@@ -76,7 +76,7 @@ li {
 .section {
     padding: 2rem 0;
     width: 100%;
-    z-index: -1;
+
     position: relative;
     overflow: hidden;
 }
@@ -388,10 +388,6 @@ textarea {
 
 /* End of Contact are */
 
-.follow,
-.section {
-    z-index: -1;
-}
 
 /* follow the journey */
 
@@ -599,7 +595,7 @@ button, input[type="submit"], input[type="reset"] {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         width: 100%;
-      
+        z-index: 1;
         position: fixed;
         top: 0;
     }
