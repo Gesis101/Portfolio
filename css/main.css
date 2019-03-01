@@ -707,7 +707,7 @@ button, input[type="submit"], input[type="reset"] {
     .about {
         position: relative;
         width: 100%;
-        min-height: 90vh;
+        min-height: 120vh;
     }
 
     .about * {
