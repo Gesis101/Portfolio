@@ -1,0 +1,732 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0A0A0A;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  text-align: center; }
+
+/* --- Navigation bar -- */
+nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-rows: 20% 1fr;
+  grid-template-columns: 100%; }
+  nav .nav-bar {
+    width: 100%;
+    top: -10px;
+    box-shadow: none;
+    background: rgba(80, 80, 80, 0.959); }
+  nav .svg1 {
+    display: flex;
+    float: right;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    justify-self: center; }
+  nav ul {
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    display: none;
+    grid-template-rows: repeat(4, 20);
+    grid-template-columns: 100%;
+    grid-gap: 2rem;
+    justify-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 1rem;
+    background: rgba(80, 80, 80, 0.959);
+    box-shadow: 0px 6px 11px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 6px 11px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 11px -2px rgba(0, 0, 0, 0.75); }
+  nav li {
+    list-style: none; }
+  nav a:hover {
+    line-height: 1em;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #d50000;
+    color: #d50000;
+    transition: 0.6s; }
+  nav a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 auto; }
+
+/* SHOWCASE */
+.showcase {
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.249737395) 0%, black 100%), url("../../imgs/IMG_1069-2.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  display: inline-grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr; }
+  .showcase .showcase-greeting {
+    display: grid;
+    grid-template-rows: 1fr 35% auto 15%;
+    grid-template-columns: 1fr;
+    margin: .2rem; }
+    .showcase .showcase-greeting h2 {
+      border-bottom: 2px solid #d50000;
+      letter-spacing: 3px;
+      height: 35%;
+      width: 143.5px;
+      font-weight: 400; }
+    .showcase .showcase-greeting #showcase-content {
+      margin-top: 10px; }
+    .showcase .showcase-greeting #showcase-welcome, .showcase .showcase-greeting #showcase-welcome1 {
+      font-weight: 300;
+      bottom: 0;
+      align-self: flex-end;
+      justify-self: flex-end;
+      text-transform: uppercase; }
+    .showcase .showcase-greeting #showcase-me {
+      font-weight: 100;
+      letter-spacing: 1px; }
+  .showcase .showcase-down {
+    align-self: center;
+    justify-self: center; }
+    .showcase .showcase-down img {
+      width: 5rem;
+      height: 5rem; }
+    .showcase .showcase-down img:hover, .showcase .showcase-down img:active {
+      border-radius: 100%;
+      background: rgba(251, 0, 0, 0.452);
+      height: 20%;
+      transition: 0.5s; }
+
+/* About me */
+.aboutMe-wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white; }
+
+.about-me {
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: grid;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  grid-template-rows: 80px repeat(2, 0.2fr) 10px;
+  grid-template-columns: 1fr; }
+  .about-me #about-pic {
+    background: url("../../imgs/thabo - Copy.JPG") no-repeat center/cover;
+    background-position: left 4px bottom 85%;
+    margin: 0 auto;
+    padding: 0;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px; }
+  .about-me h3 {
+    padding-bottom: 1rem;
+    width: 120px;
+    justify-self: center;
+    align-self: center; }
+  .about-me p {
+    padding: 1rem;
+    letter-spacing: 0.5px; }
+  .about-me button {
+    width: 8rem;
+    height: 3rem;
+    padding: 0.5;
+    margin-top: 2rem;
+    text-align: center;
+    border: 2px solid #ac1212;
+    border-radius: 0.5rem;
+    letter-spacing: 1.5px;
+    color: white;
+    background-color: black; }
+
+.skills-wrapper {
+  width: 100%;
+  background: #0a0a0a;
+  position: relative; }
+
+.skills-overview {
+  width: 90%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+  grid-template-rows: 100px auto auto auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 1.5rem;
+  justify-content: center; }
+  .skills-overview p {
+    margin: 1rem;
+    margin-bottom: 0; }
+
+/* skill bars */
+.spread-bar {
+  text-align: left;
+  text-align: -webkit-left;
+  text-align: -moz-left;
+  text-align: -o-left;
+  text-align: -ms-left;
+  margin: 0; }
+
+.spread-bar > p {
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+#progress-bar {
+  background-color: black;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  width: 100%;
+  height: auto; }
+
+#progress-bar > div {
+  background-color: #d50000;
+  /* Adjust with JavaScript */
+  height: 1rem;
+  border-radius: 10px; }
+
+.js {
+  text-align: -webkit-right;
+  text-align: -moz-right;
+  text-align: -o-right;
+  text-align: -ms-right;
+  text-align: right;
+  color: white;
+  padding-bottom: 5px;
+  padding-right: 1rem;
+  height: 100%; }
+
+.bar-3 {
+  margin-bottom: 1rem; }
+
+.bar-1 #percent1 {
+  width: 70%; }
+
+.bar-1 #percent2 {
+  width: 60%; }
+
+.bar-1 #percent3 {
+  width: 65%; }
+
+.bar-1 #percent4 {
+  width: 40%; }
+
+/* Front-end */
+.bar-2 #percent1 {
+  width: 85%; }
+
+.bar-2 #percent2 {
+  width: 70%; }
+
+.bar-2 #percent3 {
+  width: 60%; }
+
+.bar-2 #percent4 {
+  width: 80%; }
+
+/* Software development */
+.bar-3 #percent1 {
+  width: 55%; }
+
+.bar-3 #percent2 {
+  width: 35%; }
+
+/* MY PROJECTS AREA */
+.projects-wrapper {
+  width: 100%;
+  height: 120vh;
+  background-color: #2f3640; }
+
+.projects {
+  color: white;
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-rows: repeat(5, auto) 20%;
+  grid-template-columns: 1fr;
+  text-align: left;
+  margin: 0 auto; }
+  .projects h1 {
+    text-align: center; }
+  .projects h3 {
+    width: 45%; }
+  .projects .projects-share {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin: 1rem;
+    display: grid;
+    grid-template-rows: auto 100%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: flex-end; }
+    .projects .projects-share h3 {
+      width: 150px;
+      margin: 0 auto;
+      justify-self: flex-start;
+      align-self: flex-start;
+      font-weight: 300;
+      letter-spacing: 1px; }
+    .projects .projects-share .pro-buttons {
+      display: flex; }
+      .projects .projects-share .pro-buttons button {
+        top: 0;
+        text-align: center;
+        width: 5rem;
+        margin: 1rem;
+        height: 3rem;
+        text-align: center;
+        border: 2px solid #0f0f0f;
+        border-radius: 0.5rem;
+        letter-spacing: 1.5px;
+        color: white;
+        background-color: black; }
+        .projects .projects-share .pro-buttons button img {
+          height: 40px;
+          width: 40px; }
+  .projects .projects-goals h3 {
+    width: 80%; }
+
+footer {
+  height: 30vh;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto auto auto 100px;
+  grid-template-columns: 1fr; }
+  footer .social-media {
+    margin: 0 auto; }
+    footer .social-media img {
+      width: 31px;
+      height: 30px;
+      margin: 1rem; }
+  footer .comingsoon h4 {
+    font-weight: 300; }
+  footer .comingsoon img {
+    width: 35px;
+    height: 35px; }
+  footer .copyright {
+    align-self: flex-end; }
+
+/* Tools */
+section {
+  height: 100vh;
+  width: 100%; }
+
+.content {
+  margin-top: 1rem; }
+
+.h_underline {
+  border-bottom: 2px solid #d50000; }
+
+/* MEDIA QUERIES ONLY! */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) and (max-width: 3000px) {
+  nav {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    margin-top: 10px; }
+    nav .nav-bar {
+      display: none; }
+    nav ul {
+      background: transparent;
+      display: flex;
+      top: 0;
+      width: 50%;
+      margin-right: 0rem;
+      list-style: none;
+      box-shadow: none;
+      color: white; }
+      nav ul li {
+        padding: 0;
+        text-align: right;
+        float: right;
+        margin: 0 auto;
+        list-style: none; }
+      nav ul a:hover {
+        line-height: 1em;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #d50000;
+        color: #d50000;
+        transition: 0.6s; }
+
+  #mainNav {
+    margin-right: 2.5rem; }
+    #mainNav a {
+      font-size: 15pt; }
+    #mainNav li {
+      padding: 1rem; }
+
+  .showcase-greeting {
+    font-size: 200%;
+    padding-left: 20%; }
+    .showcase-greeting #showcase-welcome2 {
+      font-size: 145%;
+      height: 35%;
+      width: 33%; }
+    .showcase-greeting #showcase-me {
+      font-size: 70%; }
+
+  .aboutMe-wrapper {
+    height: 60vh; }
+    .aboutMe-wrapper .about-me {
+      background-color: white;
+      color: black;
+      text-align: center;
+      display: grid;
+      position: relative;
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      grid-template-rows: 80px 23% 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; }
+      .aboutMe-wrapper .about-me h1 {
+        grid-column-start: 1;
+        grid-column-end: 4; }
+      .aboutMe-wrapper .about-me #about-pic {
+        background: url("../../imgs/thabo - Copy.JPG") no-repeat center/cover;
+        background-position: left 4px bottom 85%;
+        margin: 0 auto;
+        padding: 0;
+        border: 3px solid black;
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        grid-column-start: 1;
+        grid-column-end: 4; }
+      .aboutMe-wrapper .about-me .about-descri {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr; }
+      .aboutMe-wrapper .about-me .t {
+        grid-column-start: 1;
+        grid-column-end: 4; }
+
+  .skills-overview {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+    grid-template-rows: 100px auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 0rem;
+    justify-content: center; }
+    .skills-overview h1 {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+    .skills-overview .skill-descri {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+    .skills-overview p {
+      margin: 1rem;
+      margin-bottom: 0; }
+
+  .content {
+    width: auto;
+    margin: .5rem; }
+
+  .projects-wrapper {
+    height: 40vh; }
+    .projects-wrapper .projects * {
+      text-align: left; }
+    .projects-wrapper .projects {
+      color: white;
+      height: 100%;
+      width: 95%;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      .projects-wrapper .projects h1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        justify-self: center; }
+      .projects-wrapper .projects .projects-share {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        justify-self: end;
+        align-self: flex-end;
+        width: 100%; }
+      .projects-wrapper .projects .pro-buttons {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        justify-self: center;
+        align-self: center; }
+      .projects-wrapper .projects #git, .projects-wrapper .projects #insta {
+        width: 60%;
+        height: 55px; }
+      .projects-wrapper .projects #git::before {
+        content: "Github"; }
+      .projects-wrapper .projects #insta::before {
+        content: "Photography"; } }
+@media (min-width: 1024px) and (max-width: 1281px) {
+  nav {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    margin-top: 10px; }
+    nav .nav-bar {
+      display: none; }
+    nav ul {
+      background: transparent;
+      display: flex;
+      top: 0;
+      width: 50%;
+      margin-right: 0rem;
+      list-style: none;
+      box-shadow: none;
+      color: white; }
+      nav ul li {
+        padding: 0;
+        text-align: right;
+        float: right;
+        margin: 0 auto;
+        list-style: none; }
+
+  #mainNav {
+    margin-right: 2.5rem; }
+    #mainNav a {
+      font-size: 15pt; }
+    #mainNav li {
+      padding: 1rem; }
+
+  .showcase-greeting {
+    font-size: 200%;
+    padding-left: 20%; }
+    .showcase-greeting #showcase-welcome2 {
+      font-size: 145%;
+      height: 35%;
+      width: 33%; }
+    .showcase-greeting #showcase-me {
+      font-size: 70%; }
+
+  .aboutMe-wrapper {
+    height: 60vh; }
+    .aboutMe-wrapper .about-me {
+      background-color: white;
+      color: black;
+      text-align: center;
+      display: grid;
+      position: relative;
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      grid-template-rows: 80px 23% 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; }
+      .aboutMe-wrapper .about-me h1 {
+        grid-column-start: 1;
+        grid-column-end: 4; }
+      .aboutMe-wrapper .about-me #about-pic {
+        background: url("../../imgs/thabo - Copy.JPG") no-repeat center/cover;
+        background-position: left 4px bottom 85%;
+        margin: 0 auto;
+        padding: 0;
+        border: 3px solid black;
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        grid-column-start: 1;
+        grid-column-end: 4; }
+      .aboutMe-wrapper .about-me .about-descri {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr; }
+      .aboutMe-wrapper .about-me .t {
+        grid-column-start: 1;
+        grid-column-end: 4; }
+
+  .skills-overview {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+    grid-template-rows: 100px auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 0rem;
+    justify-content: center; }
+    .skills-overview h1 {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+    .skills-overview .skill-descri {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+    .skills-overview p {
+      margin: 1rem;
+      margin-bottom: 0; }
+
+  .content {
+    width: auto;
+    margin: .5rem; }
+
+  .projects-wrapper {
+    height: 67vh; }
+    .projects-wrapper .projects {
+      color: white;
+      height: 100%;
+      width: 90%;
+      display: inline-grid;
+      grid-template-rows: 22% 1fr 1fr;
+      grid-template-columns: repeat(2, auto); }
+      .projects-wrapper .projects h1 {
+        grid-column-start: 1;
+        grid-column-end: 3; }
+      .projects-wrapper .projects .projects-share {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: end;
+        align-self: flex-end;
+        width: 100%; }
+      .projects-wrapper .projects .pro-buttons {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        justify-self: center;
+        align-self: center; }
+      .projects-wrapper .projects #git, .projects-wrapper .projects #insta {
+        width: 60%;
+        height: 55px; }
+      .projects-wrapper .projects #git::before {
+        content: "Github"; }
+      .projects-wrapper .projects #insta::before {
+        content: "Photography"; } }
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    margin-top: 10px; }
+    nav .nav-bar {
+      display: none; }
+    nav ul {
+      background: transparent;
+      display: flex;
+      top: 0;
+      width: 50%;
+      margin-right: 0rem;
+      list-style: none;
+      box-shadow: none;
+      color: white; }
+      nav ul li {
+        padding: 0;
+        text-align: right;
+        float: right;
+        margin: 0 auto;
+        list-style: none; }
+
+  .showcase-greeting {
+    font-size: 150%;
+    padding-left: 5%; }
+    .showcase-greeting #showcase-welcome2 {
+      font-size: 120%;
+      height: 28%;
+      width: 30%; }
+    .showcase-greeting #showcase-me {
+      font-size: 80%; }
+
+  .skills-overview {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+    grid-template-rows: 100px auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 0rem;
+    justify-content: center; }
+    .skills-overview h1 {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+    .skills-overview .skill-descri {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+    .skills-overview p {
+      margin: 1rem;
+      margin-bottom: 0; }
+
+  .content {
+    width: auto;
+    margin: .5rem; }
+
+  .projects-wrapper {
+    height: 67vh; }
+    .projects-wrapper .projects {
+      color: white;
+      height: 100%;
+      width: 90%;
+      display: inline-grid;
+      grid-template-rows: 22% 1fr 1fr;
+      grid-template-columns: repeat(2, auto); }
+      .projects-wrapper .projects h1 {
+        grid-column-start: 1;
+        grid-column-end: 3; }
+      .projects-wrapper .projects .projects-share {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: end;
+        align-self: flex-end;
+        width: 100%; }
+      .projects-wrapper .projects .pro-buttons {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        justify-self: center;
+        align-self: center; }
+      .projects-wrapper .projects #git, .projects-wrapper .projects #insta {
+        width: 60%;
+        height: 55px; }
+      .projects-wrapper .projects #git::before {
+        content: "Github"; }
+      .projects-wrapper .projects #insta::before {
+        content: "Photography"; } }
+/* .links li a:hover {
+    line-height: 1em;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #d50000;
+    color: #d50000;
+    transition: 0.6s;
+} */
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .projects-wrapper {
+    height: 80vh; } }
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -7,101 +8,93 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
     <link rel="icon" href="imgs/thabo - Copy.JPG">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <title> Thabo Moyo</title>
-
 </head>
 
 <body>
-    <!-- Navagation and showcase -->
-    <div id="showcase">
-        <header>
-            <nav class="cf" id="desk-nav">
-                <ul class="cf">
-                    <li id="mainLogo" class="to-small">
-                        <img id="logoImg" src="imgs/Symbol%201%20%E2%80%93%201.png">
-                    </li>
-                </ul>
-                <div class="links">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#aboutMe">About me </a>
-                        </li>
-                        <li>
-                            <a href="#projects">Projects </a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                        <li  style="display: none;">
-                            <a href="#">Photography</a>
-                        </li>
-                        <li id="cv">
-                            <a href="cv.html">CV</a>
-                        </li>
-                        
-                    </ul> 
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="svg1" id="svg1">
+                    <svg class="svg" id="svg" width="30" height="30">
+                        <path d="M0,5 50,5" stroke="#d50000" stroke-width="3" />
+                        <path d="M0,14 50,14" stroke="#d50000" stroke-width="3" />
+                        <path d="M0,23 50,23" stroke="#d50000" stroke-width="3" />
+                    </svg>
                 </div>
+            </div>
+            <ul id="mainNav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about-me">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects </a>
+                </li>
+                <li>
+                    <a href="#skills">Skills </a>
+                </li>
+                <li>
+                    <a href="views/pages/contact.html">Contact</a>
+                </li>
+
+            </ul>
         </nav>
-        <nav id="mobile-nav">
-                <img id="logoImg" src="imgs/Symbol%201%20%E2%80%93%201.png">
-                <svg class="svg" id="svg" width="30" height="30">
-                        <path d="M0,5 50,5" stroke="#d50000"
-                        stroke-width="3"/>
-                        <path d="M0,14 50,14" stroke="#d50000"
-                        stroke-width="3" />
-                        <path d="M0,23 50,23" stroke="#d50000"
-                        stroke-width="3"/>
-                    </svg> 
-                <div id="mobile-side-menu" class="side-nav">
-                        <button id="btn-close" class="btn-close"><h2 id="clo" style="font-size: 30pt;">&times;</h2></a>
-                        <a href="#">Home</a>
-                        <a href="#aboutMe">About me</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
-                </div>
-        </nav>
-        </header>
-        <div class="section-main container">
-            <h1 id="welcome" style="letter-spacing: 5px; font-size: 30pt; margin-top: 5.1rem; z-index: 0;"> </h1>
-            <h2> <span id="welcome2">I'M THABO</span></h2>
-            <h3> Developer  &#9679; Photographer  &#9679; Student </h3>
-            <form action="#contact">
-                <input type="submit" value="GET IN TOUCH" />
-            </form>
+    </header>
+
+    <div class="showcase">
+        <div class="showcase-greeting">
+            <div></div>
+            <div class="showcase-content">
+                <h3 id="showcase-welcome" style="letter-spacing: 2px;">Greetings</h3>
+                <h2 id="showcase-welcome2">I'M THABO</h2>
+              
+                <h3 id="showcase-me"> Developer <span style="color: red;">&#9679; </span> Photographer <span style="color: red;">&#9679; </span>  Student </h3>
+             </div>
+        </div>
+        <div></div>
+        <div class="showcase-down">
+            <h4>Read more</h4>
+            <a href="#about-me"> <img src="imgs//arrow-down.png"></a>
         </div>
     </div>
-    <!-- About me section (Add some animations/Js with some skills etc)-->
-    <section class="section-main " id="aboutMe">
-        <div class="container about">
-            <h1>ABOUT ME</h1>
-            <div id="pic">
-                <div id="circlePic"></div>
-            </div>
+    <div class="aboutMe-wrapper">
+        <section class="section about-me" id="about-me">
+            <h1> ABOUT ME </h1>
 
-            <div class="description">
-            <div class="whoAmI bo">
-                <h3> Who am I ? </h3>
-                <p style="text-align: left;">I am currently a second year student studying Computer Science with Web
-                    Development at the University of Salford.
-                    I have always had a passion for technology from a young age. One of my first experiences with
-                    computers; in 9th grade, I wrote a simple yet effective
-                    program that helped with my maths homework
-                </p>
-                <p style="text-align: left;">
-                    Before coming to the United Kindom, I had already lived in 2 other countries. Born in Zimbabwe,
-                    spent half of my childhood
-                    in the beautiful lands of South Africa and the other half in Dortmund, Germany. I then graduated
-                    from secondary school and college in Manchester, UK
-                    and now a University student.
-                </p>
+            <div id="about-pic">
+                <!-- CIRCLE PIC HERE ADDED IN CSS-->
             </div>
-                <div class="whoAmI bo2">
-                    <h3> What do I do ? </h3>
+            <div class="about-descri">
+                <div class="about-descri-item">
+                    <h3 class="h_underline"> Who am I ?</h3>
+                    <p style="text-align: left;">I am currently a second year student studying Computer Science with
+                        Web
+                        Development at the University of Salford.
+                        I have always had a passion for technology from a young age. Technology is capable of impacting
+                        millions of people, the idea that I can impact
+                        someone else anywhere in the world is what drives my passion for Tech.
+                        I also currenlty run an instagram page based on technology with over 30k followers, I have
+                        created my own little community with people all over the world
+                        with the same passion as my self.
+                        <br> <br>
+                        Before coming to the United Kindom, I had already lived in 2 other countries. Born in Zimbabwe,
+                        spent half of my childhood
+                        in the beautiful lands of South Africa and the other half in Dortmund, Germany. I then
+                        graduated
+                        from secondary school and college in Manchester, UK
+                        and now a University student.
+                    </p>
+
+                </div>
+
+                <div class="about-descri-item">
+                    <h3 class="h_underline"> What do I do ?</h3>
                     <p style="text-align: left;">I mainly focus on building Web Applications from <strong>Front-End</strong>
                         using common front end technologies such as
                         <strong> React </strong>, <strong> HTML/CSS</strong> and <strong>JavaScript</strong> to <strong>
@@ -111,225 +104,178 @@
                         I also use <strong> frameworks </strong> like Laravel, BootStrap(including preprocessor SASS)
                         and Express
                         to help minimise development time and complexity.
-                    </p>
-                    <p style="text-align: left;">Besides the web, I have also learnt some Object-Oriented Langauges
+                        Besides the web, I have also learnt some Object-Oriented Langauges
                         from self teaching through online resources in my spare time
                         or University modules. I have written small desktop applications in JAVA and C#.
                     </p>
                 </div>
+
+                <div class="t"> <button> Contact Me </button></div>
+            </div>
+        </section>
+    </div>
+    <div class="skills-wrapper">
+        <section class="section skills-overview" id="skills">
+            <h1>SKILLS OVERVIEW</h1>
+            <div class="skill-descri">
+                <p style="text-align: left;">
+                    Over the years I have worked with multiple technologies.
+                    However, I have mostly forcused on Web Dev with both back-end & and front-end.
+                    I am competent with front-end technologies. Good understanding of the DOM elements
+                    and able to manipulate them effectively. I also work with PHP(Laravel OOP), Node.JS
+                    & Databases(SQL , Mongo).
+                    Although I mostly know Web dev, I have experience with OOP langauges such as JAVA/C# from
+                    University projects. With these projects, I also learnt programming best practices such as
+                    Design patterns, inheritence and comment ..etc.
+                    <br>
+                    <br>
+                    Besides technical skill, I have also built up people skills from working part time, group projects
+                    and meet ups.
+                </p>
             </div>
 
-            <h3 class="h3-skill" id="h3-skill">Skills Overview</h3>
-
-            <h3 class="h3-mobile" id="h3-mobile">Skils Overview</h3>
-            <div class="skill-wrapper">
-                <button id="hello"><img id="prev" src="imgs/prev.png"> </button>
-                <div class="slide slide1">
-                        <h4  style="padding-bottom:1rem;"> BACK-END</h4>
-                    <div class="slide-content">          
-                        <div class="content descr">
-
-                            <p> Back-End is the area I personally enjoy the most, I find a lot of joy creating dynamic websites.
-                                PHP is the first language I learnt along with SQL. My skills were further improved from the 'client-server' University module
-                                where I learnt to create effiecient databases.
-                                <br>
-                                Out of interest, I self-taught NodeJS and MongoDB during my spare time. Actually, this simple site handles data on NodeJS.
-                                I am able to replicate most of what I can do in PHP with NodeJS too.
-                            </p>
-                        </div>
-                        <div class="content bar-1">
-                            
-                            <div class="spread-bar">
-                                <p> PHP </p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent1"> 70%</div>
-                                </div>
-                            </div>
-                            <div class="spread-bar">
-                                <p>NODE.JS</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent2">60%</div>
-                                </div>
-                            </div>
-                            <div class="spread-bar">
-                                <p>SQL</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent3">65%</div>
-                                </div>
-                            </div>
-                            <div class="spread-bar">
-                                <p>MongoDB </p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent4">40%</div>
-                                </div>
-                            </div>
-                            
-                        </div>
+            <div class="content bar-1">
+                <h4> BACK END</h4>
+                <div class="spread-bar">
+                    <p> PHP </p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent1"> 70%</div>
                     </div>
                 </div>
-                <!--End of slide1 first content . Above is slide-content-->
-                <div class="slide slide2">
-                        <h4 style="padding-bottom:1rem;"> FRONT-END</h4>
-                    <div class="slide-content">
-                        <div class="content descr" id="descr">
-                            <p> Learning front-end was the first step to get closer to my desire to be a full stack developer.
-                                I have learnt how the DOM works and how to manipulate HTML elements with CSS. I then learnt
-                                how to make pages interactive with JS. I was able to apply previous OOP knowledge to JS which
-                                made the learning process easier.
-                                <br>
-                                To help with development speed, I learnt frameworks/libraries such as Bootstrap, React and CSSgrid which helps a lot 
-                                to keep a responsive page.
-                            </p>
-                        </div>
-                        <div class="content bar-2">
-                            <div class="spread-bar">
-                                <p> HTML/CSS</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent1">85%</div>
-                                </div>
-                            </div>
-                            <div class="spread-bar">
-                                <p> javascript</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent2"> 70%</div>
-                                </div>
-                            </div>
-                            <div class="spread-bar">
-                                <p> REACT</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent3">60%</div>
-                                </div>
-                            </div>
-                            <div class="spread-bar">
-                                <p>Design: Adobe PS & XD</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent4">80%</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="spread-bar">
+                    <p>NODE.JS</p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent2">60%</div>
                     </div>
                 </div>
-                <!--End of slide1 first content . Above is slide-content-->
-                <div class="slide slide2">
-                    <h4  style="padding-bottom:1rem;"> SOFTWARE DEVELOPMENT</h4>
-                    <div class="slide-content">
-                        <div class="content descr">
-
-                            <p>
-                                During my time, I have exposed myself to object oriented programming and have self taught the fundamentals of OOP which
-                                helped me a lot during my first year. Over time, I started to build small projects to improve my 
-                                understanding.
-                                <br>
-                                My second year in University has also improved my knowledge of OOP by assisting me to write good standard
-                                code by making use of best practices such as design patterns, inheritence and encapsulation ..etc. 
-                            </p>
-                        </div>
-                        <div class="content bar-3">
-
-                            <div class="spread-bar">
-                                <p> JAVA</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent1">65%</div>
-                                </div>
-                            </div>
-                            <div class="spread-bar">
-                                <p>C#</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent2">35%</div>
-                                </div>
-                            </div>
-                            <div class="spread-bar">
-                                <p>DESIGN PATTERNS</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent3">50%</div>
-                                </div>
-                            </div>
-                            <div class="spread-bar">
-                                <p>OOP</p>
-                                <div id="progress-bar">
-                                    <div class="js" id="percent4">70%</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="spread-bar">
+                    <p>SQL</p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent3">65%</div>
                     </div>
                 </div>
-                <!--End of slide1 first content . Above is slide-content-->
-                <button id="hello"><img id="next" src="imgs/next.png"> </button>
-            </div> <!-- end of skill wrapper-->
-        </div> <!--   end of container abut section  -->
-
-
-
-
-    </section>
-    <!-- Projects section -->
-    <section class="section-main" id="projects">
-        <div class="container"> 
-            <h1> Projects </h1>
-            <h4 id="h4">Projects compeleted <h4>
-
-                <div class="projectContent">
-                        <p>Coming soon...</p>
-                        <p style="color: orange; padding-top: 30px;">Currently: Trying to add previous projects to my live server <br> without affecting speed</p>
-                        <p id="putDate"></p>
+                <div class="spread-bar">
+                    <p>MongoDB </p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent4">40%</div>
+                    </div>
                 </div>
+            </div>
+            <div class="content bar-2">
+                <h4> FRONT END</h4>
+                <div class="spread-bar">
+                    <p> HTML/CSS</p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent1">85%</div>
+                    </div>
+                </div>
+                <div class="spread-bar">
+                    <p> javascript</p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent2"> 70%</div>
+                    </div>
+                </div>
+                <div class="spread-bar">
+                    <p> REACT</p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent3">60%</div>
+                    </div>
+                </div>
+                <div class="spread-bar">
+                    <p>Design: Adobe PS & XD</p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent4">80%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content bar-3">
+                <h4> SOFTWARE DEV </h4>
+                <div class="spread-bar">
+                    <p> JAVA</p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent1">55%</div>
+                    </div>
+                </div>
+                <div class="spread-bar">
+                    <p>C#</p>
+                    <div id="progress-bar">
+                        <div class="js" id="percent2">35%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="projects-wrapper">
+    <section class="section projects" id="projects">
+        <h1> MY WORK</h1>
+        <div class="projects-dev">
+            <h3>Development</h3>
+            <ul>
+                <li>Full stack web applications, APIs, microservices, cloud computing</li>
+                <li>JAVA/C# Automation</li>
+                <li>Low level game development</li>
+            </ul>
         </div>
-    </section>
-
-    <!-- Photography (Add extra link to another page if user wants to see more about this subject) -->
-
-
-    <!--  Contact me section -->
-    <section class="section" id="contact">
-        <div class="container">
-            <h1> CONTACT ME </h1>
-           <div class="main-contact">
-                <div class="form-main">
-                    <form id="form1"  action="#">
-                        <div class="form-inputs">
-                            <label for="name">Name</label>
-                            <input type="text" id="name">
-                            <label for="email">Email</label>
-                            <input type="email" id="email">
-                            <label for="subjext">Subject</label>
-                            <input type="text" id="subject">
-                            <label for="textarea">Message</label>
-                            <textarea rows="5" cols="30" name="message" form="form1" id="textarea">Enter message here *</textarea>
-                            <button type="submit"> Submit</button> 
+        <div class="projects-photo">
+            <h3>Photography</h3>
+            <ul>
+                <li>Good standard portraits & Editing</li>
+                <li>Technology photography</li>
+            </ul>
+        </div>
+        <div class="projects-community">
+            <h3>Community</h3>
+            <ul>
+                <li>Open source projects posted to public groups</li>
+                <li>Instagram Technology page</li>
+            </ul>
+        </div>
+        <div class="projects-goals">
+                <h3>Future Ventures & Project goals</h3>
+                <ul>
+                    <li>Social Media Web app : To help further grow my community</li>
+                    <li>Mobile JAVA Automation app : To automate my daily tasks</li> 
+                    <li>Scalable distributed systems (Infrastructure, networks, mmicroservices</li> 
+                    <li>Machine Learning/AI</li> 
+                </ul>
+            </div>
+            <div class="projects-share">
+                <div></div>
+                <div class="pro-buttons">
+                    <form>
+                        <button id="git" ><img src="imgs/github.png"></button>
+                    </form>
+                    <form>
+                        <button id="insta"><img src="imgs/cam.png"></button>
                     </form>
                 </div>
-           </div>
-           <div>
-
-           </div>
-        </div>
-    </section>
-
-    <!-- Social media -->
-    <section class="section follow" id="follow">
-        <div class="container jrny-content">
-            <h3 style="letter-spacing:3px;"> FOLLOW THE JOURNEY </h3>
-            <div class="social-media">
-                <a href="https://www.instagram.com/monsterpcs/"><img src="imgs/instaIcon.png"></a>
-                <a href="https://github.com/Gesis101"><img src="imgs/gitIco.png"></a>
-                <a href="https://www.linkedin.com/in/thabo-moyo"><img id="liIcon" src="imgs/linkedIN.png"></a>
-                <a href="mailto:thabo.s.moyo@gmail.com"><img src="imgs/emailIcon.png"></a>
             </div>
-            <div class="comingsoon">
-                <h4>Coming soon...</h4>
-                <a><img src="imgs/youtubeIcon.png"></a>
-            </div>
-        </div>
     </section>
+    </div>
 
-    <!-- footer -->
-    <footer class="section">
-        <p> &copy; Copyright Thabo Moyo</p>
+    <footer>
+        <h3 style="letter-spacing:3px; font-weight: 400"> FOLLOW THE JOURNEY </h3>
+        <div class="social-media">
+            <a href="https://www.instagram.com/monsterpcs/"><img src="imgs/instaIcon.png"></a>
+            <a href="https://github.com/Gesis101"><img src="imgs/gitIco.png"></a>
+            <a href="https://www.linkedin.com/in/thabo-moyo"><img id="liIcon" src="imgs/linkedIN.png"></a>
+            <a href="mailto:thabo.s.moyo@gmail.com"><img src="imgs/emailIcon.png"></a>
+        </div>
+        <div class="comingsoon">
+            <h4>Coming soon...</h4>
+            <a><img src="imgs/youtubeIcon.png"></a>
+        </div>
+        <div class="copyright">
+            <p> &copy; Copyright Thabo Moyo </p>
+        </div>
     </footer>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
-
-    <script type="text/javascript" src="js/basic.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="static/scripts/main.js"></script>
+    <script src="static/scripts/nav.js"></script>
+    <script src="static/scripts/basic.js"></script>
 
 </body>
 
