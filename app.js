@@ -31,7 +31,7 @@ app.get('/contact', function(req, res){
 //REMINDER: MAKE Err 400 Page
 app.get('*', function(req, res) {
     res.writeHead(404);
-    res.end("It's a sticky one still, just press back and call it a day fam");
+    res.render('index');
   });
 //Allows us to retrieve data from the body/html
 app.use(bodyParser.urlencoded({extended: false}));
@@ -72,6 +72,6 @@ app.post('/Contact/send', function (req, res) {
    smtpTransport.close(); 
     }); });
 
-app.listen(3000);
-console.log("Running on port 3000")
+app.listen(process.env.PORT || 3000);
+console.log("Running on port "+process.env.PORT)
 module.exports = app;
