@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const xoauth2 = require("xoauth2");
+var smtpTransport = require('nodemailer-smtp-transport');git 
 // Set render engine. Defaultly looks in folder named "views", therefore, we redirect with path join.
 app.set('views', path.join(__dirname, 'public/views/pages'));
 app.set("view engine", "ejs");
@@ -30,7 +31,6 @@ app.get('/contact', function(req, res){
 //If path does not existed then tell dat boi to go back!
 //REMINDER: MAKE Err 400 Page
 app.get('*', function(req, res) {
-    res.writeHead(404);
     res.render('index');
   });
 //Allows us to retrieve data from the body/html
