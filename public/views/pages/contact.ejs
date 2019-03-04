@@ -1,0 +1,56 @@
+<%- include('../includes/header.ejs'); -%>
+<link rel="stylesheet" type="text/css" href="../../../../static/css/contact.css">
+</head>
+
+<body>
+        <header>
+                <nav id="nav" style="color:black;">
+                    <div class="nav-bar">
+                        <div class="svg1" id="svg1">
+                            <svg class="svg" id="svg" width="30" height="30">
+                                <path d="M0,5 50,5" stroke="#d50000" stroke-width="3" />
+                                <path d="M0,14 50,14" stroke="#d50000" stroke-width="3" />
+                                <path d="M0,23 50,23" stroke="#d50000" stroke-width="3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <ul id="mainNav" style="color:black;">
+                        <li>
+                            <a href="index">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-me">About</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects </a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skills </a>
+                        </li>
+                        <li>
+                            <a href="contact">Contact</a>
+                        </li>
+            
+                    </ul>
+                </nav>
+            </header>
+            
+    <div id="contact-showcase" class="contact-showcase">
+        <div class="main-contact">
+            <h1> EMAIL ME</h1>
+            <form id="form1" action="/contact/send" method="POST" >
+                <input name="guest" type="text" id="name" placeholder="Name *">
+                <input name="email" type="email" id="email" placeholder="Email *">
+                <input name="subject" type="text" id="subject" placeholder="Subject *">
+                <textarea rows="5" cols="30" name="message" form="form1" id="textarea" 
+                placeholder="Enter message *" autofocus></textarea>
+                <button type="submit" value="submit"> Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+ 
+    <%- include('../includes/footer.ejs'); -%>
+</body>
+
+</html>
