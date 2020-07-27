@@ -7,7 +7,8 @@ Domain: thabomoyo.com ///To view on the web
 ## STEP 1: To run locally, download the repo to your PC.
 !You will need Node JS installed to be able to run this locally
 
-## STEP 2:If you don't have them: Install required dependencies on the Package JSON file :
+## STEP 2: Install required dependencies on the Package JSON file :
+```npm install && update```
 /Portfolio/package.json 
 
 ## STEP 3: Run app.js
