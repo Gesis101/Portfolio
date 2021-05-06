@@ -14,7 +14,7 @@
     "node-mailer": "^0.1.1",
     "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^1.18.10",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "warn": "^1.0.1",
     "xoauth2": "^1.2.0"
   },
